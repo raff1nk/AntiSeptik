@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website for My Best Friend</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <div class="login-container active" id="login-section">
+      <div class="box">
+        <h2>Hello Antiseptik</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <p id="error-message" style="color: red"></p>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-container" id="main-content" style="display: none">
+      <!-- Backsound Music -->
+      <audio id="backsound" autoplay loop>
+        <source id="audio-source" src="BestPart.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Music Title and Skip Button -->
+      <div class="music-title" id="music-title">
+        Best Part
+        <button id="skip-button" onclick="skipMusic()">Skip Music</button>
+      </div>
+
+      <div class="container">
+        <!-- Section 1 -->
+        <div class="section active" id="section1">
+          <div class="box">
+            <h2>First Met</h2>
+            <p>
+              Pas pertama kali ketemu hmmmmmm, aku pun bingung harus ngomong apa, orangnya kayak yang aneh aja, abis ketemu pertama di chemist, itu pun aku lupa apa karena pelatihan gitu ? ahh sudahlah, susah banguet aku ngingetnya, tapi
+              yang pasti Dari kimia, Pelatihan Lomba, Setiawan, dan ekskul biasa.
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('next', 1)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+          <div class="box">
+            <h2>People</h2>
+            <p>
+              Dimata aku Antiseptik tuh orangnya lucu, humble, baik, bisa diajak lucu khususnya kalau sangkut paut dengan febriano, ehmm masih suka kah ?, tapi selain itu juga menurut aku orangnya menyedihkan, gak bisa diajak lomba lagi
+              padahal terakhiran uhhhhh, Tapi yaudahlah kalau capek mah, semangat Persiapan kuliahnya. semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat semangat
+              semangat semangat semangat semangat semangat semangat semangat semangat.
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 2)">Sebelumnya</button>
+            <button onclick="navigate('next', 2)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+          <div class="box">
+            <h2>pengalaman</h2>
+            <p>
+              Pengalaman yang paling di inget jelassss gak usah ditanya lagi yang pasti, pelatihan semua pelatihan yang mana aja, tapi kalau yang paling di inget mah yang terakhir kai, dirimu yang lolos lomba tapi kau juga yang malah tidur
+              pas pelatihan parahhh, yang lain juga ada, yang waktunya pelatihan malah pengen digantiin aku geggara tugas sekolah parahhh. dan banyak lagi.
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 3)">Sebelumnya</button>
+            <button onclick="navigate('next', 3)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="section4">
+          <div class="box">
+            <h2>Kritik pesan</h2>
+            <p>
+              Kritik dan saran dari aku itu tidur yang benerrrrr, sesuain jadwalnya biar gak ketiduran pas pelatihan, atau gak time management nyaaa benerin juga, tidur normal jam 9 weh, begadang sesekali, jangan sampe ketiduran, sama
+              jangan lupa istirahatttttt..
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 4)">Sebelumnya</button>
+            <button onclick="navigate('next', 4)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="section5">
+          <div class="box">
+            <h2>Last</h2>
+            <p>
+              hmm bingung jelasinnya, tapi intinya terima kasih atas ini semua baik di skema ataupun di chemis ataupun yang lainnya, (aku gak inget kau di skema ngapain aja, #jujurcumaingetchemis. buttttt thanks for this year, this is the
+              best year in my life and its partly because of you.).
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 5)">Sebelumnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
