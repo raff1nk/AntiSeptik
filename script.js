@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // List of songs
   var songs = [
     { title: "Best Part", src: "BestPart.mp3" },
-    { title: "bEST pART", src: "BestPart.mp3" },
+    { title: "best Part", src: "BestPart.mp3" },
   ];
   var currentSongIndex = 0;
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "AntiSeptik" && password === "C10H21") {
+    if (username === "AntiSeptic" && password === "C10H21") {
       document.getElementById("login-section").classList.remove("active");
       document.getElementById("main-content").style.display = "block";
       updateBackground(1); // Set background for section 1
